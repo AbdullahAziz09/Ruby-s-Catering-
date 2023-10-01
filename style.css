@@ -1,0 +1,450 @@
+/* Default styles */
+.header {
+    background-color: white;
+    color: #333;
+    width: 100%;
+    height: 103px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background: url('images/logo.png') no-repeat center center;
+    background-size: contain;
+    text-indent: -9999px;
+    margin-left: 10%;
+}
+
+.nav {
+    background-color: white;
+    padding: 10px;
+}
+
+.nav a {
+    color: #c52222;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+
+.one {
+    background: url('images/bg1.png') no-repeat center center;
+    background-size: cover;
+    width: 100%; /* Updated to be responsive */
+    height: 569px; /* You can adjust the height if needed */
+    position: relative;
+}
+
+.menu-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 263px;
+    height: 60px;
+    background-color: #c52222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 120px;
+}
+
+.menu-button:hover {
+    background-color: #c52222;
+}
+/* Add this CSS for section two h1 and h3 */
+.two {
+    display: flex;
+    flex-direction: row;
+}
+
+.two h1 {
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 110px;
+    color: #c52222;
+    font-weight: bold;
+}
+
+.two h3 {
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 110px;
+    margin-right: 140px;
+}
+
+.square-container {
+    width: 751px;
+    height: 559px;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-right: 130px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 5px 0;
+}
+
+.small-square {
+    width: 156px;
+    height: 99px;
+    background-color: #ccc;
+    margin: 10px 5px 0; 
+    transition: transform 0.3s; 
+}
+
+.small-square:hover {
+    transform: scale(1.2); 
+}
+.three {
+    background: url('images/bg2.png') no-repeat center center;
+    background-size: cover;
+    width: 100%; /* Updated to be responsive */
+    height: 534px; /* You can adjust the height if needed */
+    position: relative;
+}
+
+.square {
+    width: 360px;
+    height: 361px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    position: absolute;
+    overflow: hidden; 
+    transition: background-image 0.3s; 
+}
+
+.square:hover {
+    background-image: url('images/planning.png'); /* Set the image to be displayed on hover */
+}
+.square:nth-child(1):hover {
+    background-image: url('images/events.png');
+}
+
+.square:nth-child(1) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateX(-400px);
+}
+
+.square:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateX(400px);
+}
+.circle {
+    width: 91px;
+    height: 91px;
+    background-color: #c52222;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 10px; 
+    padding: 10px; 
+}
+
+.circle img {
+    width: 50px; 
+    height: 50px; 
+    filter: invert(100%);
+}
+
+
+/* Adjust styles for h1 and h3 headings */
+.square h1 {
+   
+    margin-top: 20px;
+    color: #c52222;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.square h3 {
+    margin: 0;
+    color: #333333;
+    font-size: 14px;
+    text-align: center;
+    padding: 11px;
+}
+.four {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Set the desired width */
+    height: 250px; /* Set the desired height */
+    text-align: center;
+    background-color: white; /* Background color for the section */
+    padding: 5px 0; /* Margin from top and bottom */
+}
+.four h1{
+    color: #c52222;
+}
+.four .btn-box {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Spacing between the buttons */
+    margin-top: 20px; /* Margin from the top of the button box */
+}
+
+.four .btn {
+    width: 296px;
+    height: 65px;
+    color: #fff; /* White text color for both buttons */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.four .btn:first-child {
+    background-color: green; /* Green background color for the first button */
+}
+
+.four .btn:last-child {
+    background-color: #c52222; /* Red background color for the second button */
+}
+.five {
+    background: url('images/five.png') no-repeat center center;
+    background-size: cover;
+    width: 100%; /* Updated to be responsive */
+    height: 403px; /* You can adjust the height if needed */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.five::before,
+.five::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 2px; /* Width of the lines */
+    height: 100%;
+    background-color: rgba(192, 192, 192, 0.3); /* Light gray color with transparency */
+}
+
+.five::before {
+    left: 38%; /* Position the first line at one-third width */
+}
+
+.five::after {
+    left: 64%; /* Position the second line at two-thirds width */
+}
+
+/* Image styling */
+/* Common styles for all columns */
+/* Styles for the first column */
+.column1 {
+    display: flex;
+    flex-direction: column; /* Stack contents vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    padding: 10px; /* Add spacing around the divs */
+    border-radius: 10px;
+    margin: 10px; /* Add margin between divs */
+}
+
+.column1 img {
+    margin-top: 40px;
+    margin-left: 250px;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    filter: invert(100%);
+}
+
+.column1 .horizontal-lines {
+    margin-left: 230px;
+    width: 40px; /* Make it full width to create a horizontal line */
+    height: 1px; /* Height of the horizontal lines */
+    background-color: #c52222; /* Color of the horizontal lines */
+    margin-top: 5px; /* Adjust the top margin as needed */
+}
+
+.column1 h2 {
+    margin-left: 220px; /* Adjust the left margin as needed */
+    color: white;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.column1 h4:nth-of-type(2){
+    color: #D3D3D3;
+}
+
+.column1 h4 {
+    margin-left: 200px; /* Adjust the left margin as needed */
+    color: #D3D3D3;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.column1 h4:nth-of-type(2) {
+    margin-top: -10px; /* Add margin to the second h4 element */
+}
+
+
+.column2 {
+    display: flex;
+    flex-direction: column; /* Stack contents vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    padding: 10px; /* Add spacing around the divs */
+    border-radius: 10px;
+    margin: 10px; /* Add margin between divs */
+}
+
+.column2 img {
+    margin-top: 37px;
+    margin-left: 30px;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    filter: invert(100%);
+}
+
+.column2 .horizontal-lines {
+    margin-left: 30px;
+    width: 40px; /* Make it full width to create a horizontal line */
+    height: 1px; /* Height of the horizontal lines */
+    background-color: #c52222; /* Color of the horizontal lines */
+    margin-top: 5px; /* Adjust the top margin as needed */
+}
+
+.column2 h2 {
+    margin-left: 30px; /* Adjust the left margin as needed */
+    color: white;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.column2 h3 {
+    margin-left: 30px; /* Adjust the left margin as needed */
+    color: white;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.column2 h3:nth-of-type(1){
+    margin-top: 20px;
+}
+
+.column2 h4 {
+    margin-left: 30px; /* Adjust the left margin as needed */
+    color: #D3D3D3;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+.column2 h4:nth-of-type(1){
+    margin-top: -10px;
+}
+
+.column2 h4:nth-of-type(2) {
+    margin-top: -10px; /* Add margin to the second h4 element */
+}
+
+.column3 {
+    display: flex;
+    flex-direction: column; /* Stack contents vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+    padding: 10px; /* Add spacing around the divs */
+    border-radius: 10px;
+    margin: 10px; /* Add margin between divs */
+}
+
+.column3 img {
+    margin-top: 37px;
+    margin-left: -180px;
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Adjust the height as needed */
+    filter: invert(100%);
+}
+.column3 h2 {
+    margin-left: -180px; /* Adjust the left margin as needed */
+    color: white;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.column3 .horizontal-lines {
+    margin-left: -180px;
+    width: 40px; /* Make it full width to create a horizontal line */
+    height: 1px; /* Height of the horizontal lines */
+    background-color: #c52222; /* Color of the horizontal lines */
+    margin-top: 5px; /* Adjust the top margin as needed */
+}
+h4.special-h4 {
+    text-align: center; /* Center the text horizontally */
+    color: #D3D3D3;
+    font-weight: lighter;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 140px;
+}
+.column3 .email-input {
+    position: relative;
+    width: 319px;
+    height: 38px;
+    display: inline-block;
+    margin-right: 110px;
+    margin-top: 20px;
+}
+
+.column3 .email-input input[type="email"] {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+
+}
+
+.column3 .email-input img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    position: absolute;
+    top: 50%; /* Vertically center the image */
+    right: 5px; /* Position the image 5px from the right end */
+    transform: translateY(-190%); /* Center vertically by adjusting the translateY */
+}
+.six {
+    text-align: center; /* Center the content horizontally */
+    margin-top: 50px; /* Add margin from the top */
+}
+
+.six img {
+    width: 360px; /* Adjust the width as needed */
+    height: 130px; /* Adjust the height as needed */
+    display: block; /* Center the image within the section */
+    margin: 20px auto 0; /* Center the image horizontally and add top margin */
+}
+
+
+.six h3 {
+    color: #666666;/* Adjust the text color as needed */
+    font-size: 18px; /* Adjust the font size as needed */
+}
